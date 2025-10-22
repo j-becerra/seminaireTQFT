@@ -1,0 +1,22 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\href}[2]{#2}
+\providecommand{\eprint}{\begingroup \urlstyle{rm}\Url}
+\begin{thebibliography}{BHMV95}
+
+\bibitem[BHMV95]{BHMV}
+C.~Blanchet, N.~Habegger, G.~Masbaum, and P.~Vogel, \emph{Topological quantum
+  field theories derived from the {K}auffman bracket}, Topology \textbf{34}
+  (1995), no.~4, 883--927.
+
+\bibitem[PS97]{PS}
+V.~V. Prasolov and A.~B. Sossinsky, \emph{Knots, links, braids and
+  3-manifolds}, Translations of Mathematical Monographs, vol. 154, American
+  Mathematical Society, Providence, RI, 1997, An introduction to the new
+  invariants in low-dimensional topology, Translated from the Russian
+  manuscript by Sossinsky [Sosinski\u{\i}].
+
+\bibitem[Tur16]{Tur}
+Vladimir~G. Turaev, \emph{Quantum invariants of knots and 3-manifolds}, third
+  ed., De Gruyter Studies in Mathematics, vol.~18, De Gruyter, Berlin, 2016.
+
+\end{thebibliography}
