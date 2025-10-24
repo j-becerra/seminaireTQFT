@@ -6,10 +6,115 @@
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
-\title{GDT on TQFTs}
+\title{Group de travail on (non)-semisimple TQFTs}
 \date{2025-2026}
 
+
+
+
+\usepackage{titlesec}% http://ctan.org/pkg/titlesec
+\titleformat{\section}%
+  [hang]% <shape>
+  {\normalfont\bfseries\Large}% <format>
+  {}% <label>
+  {0pt}% <sep>
+  {}% <before code>
+\renewcommand{\thesection}{}% Remove section references...
+\renewcommand{\thesubsection}{\arabic{subsection}}%... from subsections
+
 \begin{document}
+
+
+
+\maketitle
+
+The goal of this groupe de travail is to learn different semisimple and non-semisimple TQFTs, to explain the usual constructions and to learn the  relations between them.
+
+
+\subsection{Overview?}
+
+General overview of the topics to treat, this will be rather informal.
+
+
+\subsection{Basics on TQFTs}
+
+Motivation, definition and basic properties. Classification of 1-d and 2-d TQFTs. A very good reference is \cite{CR}.
+
+
+\subsection{The BHMV TQFT}
+
+\cite{BHMV}
+
+
+\subsection{Categorical background}
+
+
+Monoidal, braided categories, rigidity, pivotal structures, twists, ribbon structures. Spherical structures, the Drinfeld center, modular categories.
+
+Fusion categories, modular fusion categories. S-matrix. Relation with $SL(S, \mathbb{Z})$.
+
+
+\subsection{Examples: quantum groups}
+
+Ribbon Hopf algebras give rise to ribbon categories.
+
+The Drinfeld double. If $A$ is a finite dimensional semisimple Hopf algebra, then $D(A)$-$\mathsf{mod}$ is a modular fusion category \cite{EG}. 
+
+The quantum group $U_q(sl_2)$, for generic $q$ and $q$ a root of unity. The finite-dimensional small quantum groups $u_q(sl_2)$. A comment about other semisimple Lie algebras.
+
+The topological ribbon Hopf algebra $U_h(sl_2)$. The unrolled quantum group $\bar{U}^H_\zeta(sl_2)$.
+
+
+\subsection{The RT 3d TQFT}
+
+Turaev's book, Bakalov-Kirillov
+
+
+\subsection{The TV TQFT}
+
+6j symbols,... Patureau-Mirand - Geer's book
+
+
+\subsection{Relation between RT and TV}
+
+If $\mathcal{C}$ is spherical fusion, then $Z^{TV}_{\mathcal{C}} \simeq Z^{RT}_{Z(\mathcal{C})}$.
+
+
+\subsection{Extended TQFTs}
+
+Thesis Marco de Renzi
+
+
+
+
+\subsection{Luybashenko TQFT}
+
+Non-ss. 
+
+
+
+%
+%\subsection{TQFT definition $\sim$ 7h30} Definition of Cobordism category, Modular functor, TQFT and quantum invariant in the general setting. Explain the duality between cap and cup (maybe without demonstration?). Roughly explain how to recover TQFTs from quantum invariant and vis-versa. Present anomalies (functoriality factor), without dealing with it.
+%
+%\subsection{Specifics} Definition of ribbon Ab-category. Talk about simple objects and domination. Modular category (and objects $\mathcal{D}$ and $\Delta$). Presentation of few properties of Hermitian/Unitary category/TQFT. What we can do/know about the TQFT with additional assumptions.
+%
+%\section{Algebraic Approach} 
+%
+%\section{Categoric approach} 
+%
+%\section{Geometrical Approach} Ref : \cite{Tur} \cite{BHMV} \cite{PS} : Definition of skein category and skein module. Presentation of its objects (braiding, twist...) specifics : modular semi-simple category, Hermitian skein category, Unitary skein category. We recall the notion of surgery presentation. Correspondance with $Rep U_q sl_2 (\mathbb{C})$.\\
+%Presentation of the Verlinde Algebra. We give two way of defining a TQFT from here.
+%
+%\section{Non-Semi-Simple case}.
+% 
+%\section{A placer} Le découpage est à discuter : Algèbres de Lie et algèbres de Lie semi-simple. Algèbre de Hopf, groupes quantique, algèbres enveloppantes, $Rep U_q \mathfrak{g}$. Peut-être parler + précisement du cas $U_q sl_2 (\mathbb{C} )$ (peut-être à faire dans la partie géométrique). Factorization homology. Construction of braided cat, ribbon alg, modular alg from Hopf alg.\\
+%Mirror/unimodal/modular cat.\\
+%Est-ce que l'on parle + spécifiquement des TQFTs 2+1 (avec les surfaces décorées etc...) autrement que dans l'approche géométrique? (ça va avec le calcul explicite de l'anomalie utilisant Lagrangien et indice de Maslov)
+
+
+
+
+\newpage
 
 
 \textbf{Semisimple:}
@@ -51,6 +156,8 @@
 
 
 \begin{itemize}
+\item MAIN REFERENCE: Book by Geer and Patureau-Mirand.
+\item Runkel's https://arxiv.org/abs/1705.05734
 \item Guide: https://sites.google.com/site/psafronov/notes/non-semisimple-tqfts
 \item  3D TQFTS AND 3-MANIFOLD INVARIANTS, https://arxiv.org/pdf/2401.10587 (survey)
 \item Turaev's book
@@ -61,31 +168,8 @@
 \end{itemize}
 
 
-\newpage
 
-\maketitle
 
-The goal of this workshop is to present TQFTs and quantum invariants, to explain the usual constructions using different point of view and the correspondence between them. We would also like to talk about the Turaev-Viro TQFT and non-semi-simple TQFTs. A particular attention will be paid to ensuring a smooth transition between concepts.
-
-\section{Elementary TQFTs} Ref : \cite{Tur}
-\subsection{Vocabulary $\sim$ 3h} Definition of Monoidal category, braiding, twist, duality, leading to the notion of braided category. Presentation of graphical calculus and its theorem (correspondance between graphical calculus and braided category), notion of trace and dimension. Maybe illustrating with easy examples chosen by the speaker. (e.g. vector space, braid category...)
-
-\subsection{TQFT definition $\sim$ 7h30} Definition of Cobordism category, Modular functor, TQFT and quantum invariant in the general setting. Explain the duality between cap and cup (maybe without demonstration?). Roughly explain how to recover TQFTs from quantum invariant and vis-versa. Present anomalies (functoriality factor), without dealing with it.
-
-\subsection{Specifics} Definition of ribbon Ab-category. Talk about simple objects and domination. Modular category (and objects $\mathcal{D}$ and $\Delta$). Presentation of few properties of Hermitian/Unitary category/TQFT. What we can do/know about the TQFT with additional assumptions.
-
-\section{Algebraic Approach} 
-
-\section{Categoric approach} 
-
-\section{Geometrical Approach} Ref : \cite{Tur} \cite{BHMV} \cite{PS} : Definition of skein category and skein module. Presentation of its objects (braiding, twist...) specifics : modular semi-simple category, Hermitian skein category, Unitary skein category. We recall the notion of surgery presentation. Correspondance with $Rep U_q sl_2 (\mathbb{C})$.\\
-Presentation of the Verlinde Algebra. We give two way of defining a TQFT from here.
-
-\section{Non-Semi-Simple case}.
- 
-\section{A placer} Le découpage est à discuter : Algèbres de Lie et algèbres de Lie semi-simple. Algèbre de Hopf, groupes quantique, algèbres enveloppantes, $Rep U_q \mathfrak{g}$. Peut-être parler + précisement du cas $U_q sl_2 (\mathbb{C} )$ (peut-être à faire dans la partie géométrique). Factorization homology. Construction of braided cat, ribbon alg, modular alg from Hopf alg.\\
-Mirror/unimodal/modular cat.\\
-Est-ce que l'on parle + spécifiquement des TQFTs 2+1 (avec les surfaces décorées etc...) autrement que dans l'approche géométrique? (ça va avec le calcul explicite de l'anomalie utilisant Lagrangien et indice de Maslov)
 
 \bibliographystyle{hamsalpha}
 \bibliography{biblio}
